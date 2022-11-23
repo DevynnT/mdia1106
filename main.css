@@ -1,0 +1,72 @@
+:root {
+    --main-bg-color: #181818;
+    --text-color: aliceblue;
+}
+
+body {
+    font-family: "Merriweather Sans";
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    height: 30%;
+    width: 100%;
+    backdrop-filter: blur(2.7px);
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#navbar > h1 {
+    margin-left: 1em;
+    margin-bottom: 0;
+}
+
+#navbar > ul {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    font-family: "Josefin Sans";
+}
+
+#navbar > ul > li {
+    font-size: 1.75em;
+    margin-right: 2em;
+    list-style-type: none;
+}
+
+#heading {
+    font-family: "Prompt";
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 2.5em;
+}
+
+h6 {
+    font-size: 2em;
+}
+
+p {
+    font-family: "Merriweather Sans";
+}
