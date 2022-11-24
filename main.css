@@ -1,6 +1,12 @@
 :root {
     --main-bg-color: #181818;
     --text-color: aliceblue;
+    --sub-heading-color: #99D4D9;
+    --heading-color: #FF0003;
+    --ball-color: #96A7A5;
+    --heading-font: "Prompt";
+    --navbar-font: "Josefin Sans";
+    --paragraph-font: "Merriweather Sans";
 }
 
 body {
@@ -17,20 +23,21 @@ body {
     backdrop-filter: blur(2.7px);
     border-radius: 7px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.7px);
     border: 1px solid rgba(255, 255, 255, 0.15);
+    
 }
 
-#navbar > h1 {
-    margin-left: 1em;
+#navbar-logo {
+    margin-left: 10em;
     margin-bottom: 0;
+    width: 10%;
 }
 
 #navbar > ul {
     margin-top: 0;
     display: flex;
     justify-content: center;
-    font-family: "Josefin Sans";
+    font-family: var(--navbar-font);
 }
 
 #navbar > ul > li {
@@ -39,9 +46,17 @@ body {
     list-style-type: none;
 }
 
-#heading {
-    font-family: "Prompt";
+.navbar-link {
+    font-size: 1em;
+    font-family: var(--navbar-font);
+    text-decoration: none;
+    color: var(--text-color);
 }
+
+.navbar-link:hover {
+    color: var(--sub-heading-color);
+}
+
 
 h1 {
     font-size: 3.5em;
@@ -60,13 +75,124 @@ h4 {
 }
 
 h5 {
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 h6 {
-    font-size: 2em;
+    font-size: 1.25em;
 }
 
 p {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+
+.headings {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+#colours-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.colour-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.colour-box {
+    display: inline-block;
+    border-radius: 10px;
+    width: 10em;
+    height: 10em;
+}
+
+#red-container {
+    background-color: var(--heading-color);
+}
+
+#blue-container {
+    background-color: var(--sub-heading-color);
+}
+
+#gray-container {
+    background-color: var(--ball-color);
+}
+
+#white-container {
+    background-color: var(--text-color);
+}
+
+#red-heading {
+    color: var(--heading-color);
+}
+
+#gray-heading {
+    color: var(--ball-color);
+}
+
+#blue-heading {
+    color: var(--sub-heading-color);
+}
+
+#blue-heading {
+    color: var(--text-color);
+}
+
+.colour-heading-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.colour-paragraph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colour-paragraph-container > p {
+    margin: 10px;
+}
+
+.typography-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10em;
+}
+
+#typography-heading {
+    font-weight: 1000;
+}
+
+#merriweather-heading {
     font-family: "Merriweather Sans";
+}
+
+#josefin-heading {
+    font-family: "Josefin Sans";
+}
+
+#h3, #h4, #h5, #h6 {
+    color: var(--sub-heading-color);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#imagery-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin-left: 2em;
 }
